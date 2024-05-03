@@ -1,0 +1,23 @@
+[package]
+name = "TEST2"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rustls = "0.20"
+tokio = { version = "1", features = ["full"] }
+tokio-rustls = "0.23"
+webpki = "0.22"
+webpki-roots = "0.22"
+rustls-pemfile = "0.2"
+base64="0.22.1"
+
+
+
+[[bin]]
+name = "server"
+path = "src/server.rs"
+
+[[bin]]
+name = "client"
+path = "src/client.rs"
